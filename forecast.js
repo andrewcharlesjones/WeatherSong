@@ -1,0 +1,17 @@
+$('#push').click(function() {
+	console.log('pushed')
+	
+	var postParameters = {};
+
+		$.ajax({
+	        url: 'https://api.forecast.io/forecast/06fb875fe64b04cde7670d7a0feb597c/42.3704550,-71.0936660',
+	        // data: {
+	        //     q: responseObject[0].name,
+	        //     type: 'track'
+	        // },
+	        success: function (response) {
+	        	console.log(response)
+	           	
+	        }
+	    });
+});
