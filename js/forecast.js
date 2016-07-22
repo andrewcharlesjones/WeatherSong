@@ -5,7 +5,7 @@ $('#push').click(function() {
 
 		$.ajax({
 
-	        url: 'https://api.forecast.io/forecast/06fb875fe64b04cde7670d7a0feb597c/42.3704550,-71.0936660',
+	        url: 'https://api.forecast.io/forecast/06fb875fe64b04cde7670d7a0feb597c/' + currlat + ',' + currlng,
 	        // data: {
 	        //     q: responseObject[0].name,
 	        //     type: 'track'
